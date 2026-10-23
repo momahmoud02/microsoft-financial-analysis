@@ -2,6 +2,8 @@
 
 A five-year financial analysis of Microsoft, delivered twice: a Power BI report for interactive review and a structured Excel workbook for line-by-line work.
 
+![Microsoft Financial Analysis dashboard](assets/dashboard.png)
+
 ## Overview
 
 | Item | Detail |
@@ -14,6 +16,8 @@ A five-year financial analysis of Microsoft, delivered twice: a Power BI report 
 ## Power BI report
 
 The report is a single executive page built around seven HTML content visuals and one slicer. The main matrix, **Detailed Financial Matrix (FY 2021-2025)**, presents the three statements side by side with consistent formatting, while the surrounding cards add context and period labels.
+
+A row of KPI cards summarises revenue, net income, gross margin, operating margin, free cash flow, and revenue growth. Below them, a revenue-versus-target trend and a segment revenue mix put the five-year performance in context.
 
 Dynamic HTML measures are used instead of stacked native visuals to keep typography, spacing, and number formatting consistent with the rest of the page.
 
@@ -37,6 +41,8 @@ Dynamic HTML measures are used instead of stacked native visuals to keep typogra
 ```text
 microsoft-financial-analysis/
 |-- Microsoft_Financial_Analysis.pbix
+|-- assets/
+|   `-- dashboard.png
 |-- data/
 |   `-- Microsoft_Financial_Analysis_2021-2025.xlsx
 `-- README.md
